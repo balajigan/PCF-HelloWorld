@@ -1,0 +1,24 @@
+resources:
+- name: app_sources
+  type: git
+  source:
+    uri: https://github.com/balajigan/PCF-HelloWorld.git
+- name: dev_deployment
+  type: cf
+  source:
+    api: https://api.run.pivotal.io
+    username: username
+    password: pwd
+    organization: BalajiDemo
+    space: development
+    skip_cert_check: true
+
+jobs:
+- name: deploy-to-PCF
+  serial: true
+  plan:
+  - get: app_sources
+    trigger: true	
+  - put: dev_deployment
+    params:
+      manifest: app_sources/manifest.yml
