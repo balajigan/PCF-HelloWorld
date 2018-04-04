@@ -13,9 +13,14 @@ public class HelloController {
     @Autowired
     NamedParameterJdbcTemplate jdbcTemplate;
 
-    @RequestMapping("/")
+    @RequestMapping("/test")
     String hello() {
-        return "Hello World!";
+        return "Hello World!!!!";
+    }
+
+    @RequestMapping("/")
+    String welcome() {
+        return "Welcome to Home Page";
     }
 
     @Data
