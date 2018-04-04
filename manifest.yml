@@ -1,0 +1,6 @@
+applications:
+- name: PCF-HelloWorld-demo
+  random-route: true
+  path: target/PCF-HelloWorld-1.0.0.jar
+  buildpack: https://github.com/cloudfoundry/php-buildpack
+  memory: 250M
