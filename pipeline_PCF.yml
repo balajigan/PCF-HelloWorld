@@ -7,14 +7,15 @@ resources:
   type: cf
   source:
     api: https://api.run.pivotal.io
-    username: username
-    password: pwd
+    username: 
+    password: 
     organization: BalajiDemo
     space: development
     skip_cert_check: true
 
 jobs:
 - name: build
+  #  serial: true
   plan:
   - get: app_sources
     trigger: true
@@ -38,11 +39,16 @@ jobs:
           cd app_sources/
           echo $PWD
           mvn clean package
-          cp target/PCF-HelloWorld-1.0.0.jar mvn-package-output/.
+          mkdir /tmp/build/put
+          mkdir /tmp/build/put/app_sources
+          mkdir /tmp/build/put/app_sources/target
+          cp target/PCF-HelloWorld-1.0.0.jar /tmp/build/put/app_sources/target/PCF-HelloWorld-1.0.0.jar
 - name: deploy-to-PCF
-  serial: true
+  #  serial: true
   plan:
   - get: app_sources
+    passed:
+      - build
     trigger: true	
   - put: dev_deployment
     params:
