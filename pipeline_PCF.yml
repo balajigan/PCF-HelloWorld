@@ -7,7 +7,7 @@ resources:
   type: cf
   source:
     api: https://api.run.pivotal.io
-    username:  
+    username:   
     password: 
     organization: BalajiDemo
     space: development
@@ -39,16 +39,17 @@ jobs:
           cd app_sources/
           echo $PWD
           mvn clean package
-          mkdir /tmp/build/put
-          mkdir /tmp/build/put/app_sources
-          mkdir /tmp/build/put/app_sources/target
-          cp target/PCF-HelloWorld-1.0.0.jar /tmp/build/put/app_sources/target/PCF-HelloWorld-1.0.0.jar
+          #         mkdir /tmp/build/put
+          # mkdir /tmp/build/put/app_sources
+          # mkdir /tmp/build/put/app_sources/target
+          cp target/PCF-HelloWorld-1.0.0.jar . 
+          ls -la 
 - name: deploy-to-PCF
   #  serial: true
   plan:
   - get: app_sources
-    passed:
-      - build
+    #    passed:
+    #  - build
     trigger: true	
   - put: dev_deployment
     params:
