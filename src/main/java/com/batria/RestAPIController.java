@@ -115,4 +115,9 @@ public class RestAPIController {
          logger.info("POST exec time ms = " + Long.toString(endTimeMs - startTimeMs));
 	 return (returnStatus);
     }
+    @RequestMapping( method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE, value = "/")
+	    public String homePage()
+	    {
+		return("Message from service....");
+	    }
 }
