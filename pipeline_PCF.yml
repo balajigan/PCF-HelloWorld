@@ -7,7 +7,7 @@ resources:
   type: cf
   source:
     api: https://api.run.pivotal.io
-    username: 
+    username:  
     password: 
     organization: BalajiDemo
     space: development
