@@ -1,0 +1,125 @@
+2018-04-05 21:34:32.084  INFO instance-2 --- [      main] c.b.MainClass                            : Hazelcast APT MainClass started 
+2018-04-05 21:34:38.309 ERROR instance-2 --- [      main] Connection                               : Issues in opening connection with Hazelcast
+2018-04-05 21:34:39.466  INFO instance-2 --- [      main] c.b.MainClass                            : Starting MainClass v1.0.0 on instance-2 with PID 22909 (/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar started by root in /root/PCF-HelloWorld)
+2018-04-05 21:34:39.472  INFO instance-2 --- [      main] c.b.MainClass                            : No active profile set, falling back to default profiles: default
+2018-04-05 21:34:39.727  INFO instance-2 --- [      main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c7d78ea: startup date [Thu Apr 05 21:34:39 UTC 2018]; root of context hierarchy
+2018-04-05 21:34:41.624  INFO instance-2 --- [nd-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.2.4.Final
+2018-04-05 21:34:44.431  INFO instance-2 --- [      main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-04-05 21:34:44.497  INFO instance-2 --- [      main] o.a.c.c.StandardService                  : Starting service Tomcat
+2018-04-05 21:34:44.499  INFO instance-2 --- [      main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.0.33
+2018-04-05 21:34:44.745  INFO instance-2 --- [tartStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-04-05 21:34:44.746  INFO instance-2 --- [tartStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5071 ms
+2018-04-05 21:34:45.756  INFO instance-2 --- [tartStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-05 21:34:45.763  INFO instance-2 --- [tartStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-05 21:34:45.768  INFO instance-2 --- [tartStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-05 21:34:45.772  INFO instance-2 --- [tartStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-05 21:34:45.773  INFO instance-2 --- [tartStop-1] o.s.b.c.e.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-05 21:34:45.956  INFO instance-2 --- [tartStop-1] o.a.c.u.SessionIdGeneratorBase           : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [113] milliseconds.
+2018-04-05 21:34:46.808  INFO instance-2 --- [      main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c7d78ea: startup date [Thu Apr 05 21:34:39 UTC 2018]; root of context hierarchy
+2018-04-05 21:34:47.018  INFO instance-2 --- [      main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hazelcast/order/put],methods=[POST],produces=[application/json]}" onto public java.lang.String com.batria.RestAPIController.putData(java.lang.String)
+2018-04-05 21:34:47.023  INFO instance-2 --- [      main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET],produces=[application/json]}" onto public java.lang.String com.batria.RestAPIController.homePage()
+2018-04-05 21:34:47.024  INFO instance-2 --- [      main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hazelcast/order/get],methods=[GET],produces=[application/json]}" onto public java.lang.Object com.batria.RestAPIController.getData(java.lang.String)
+2018-04-05 21:34:47.034  INFO instance-2 --- [      main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-05 21:34:47.035  INFO instance-2 --- [      main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-05 21:34:47.141  INFO instance-2 --- [      main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 21:34:47.142  INFO instance-2 --- [      main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 21:34:47.278  INFO instance-2 --- [      main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-05 21:34:47.707  INFO instance-2 --- [      main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-05 21:34:47.801  INFO instance-2 --- [      main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-05 21:34:47.822  INFO instance-2 --- [      main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2018-04-05 21:34:47.852 ERROR instance-2 --- [      main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:340)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:773)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:473)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:239)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:194)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:151)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:293)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1191)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1180)
+	at com.batria.MainClass.main(MainClass.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:54)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-05 21:34:47.870 ERROR instance-2 --- [      main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:239)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:194)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:151)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:293)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1191)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1180)
+	at com.batria.MainClass.main(MainClass.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:54)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 19 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:340)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:773)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:473)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	... 20 more
+2018-04-05 21:34:47.890  INFO instance-2 --- [      main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2018-04-05 21:34:47.891  INFO instance-2 --- [      main] o.a.c.c.StandardService                  : Stopping service Tomcat
+2018-04-05 21:34:48.230  INFO instance-2 --- [      main] o.a.c.u.LifecycleBase                    : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-04-05 21:34:48.231  INFO instance-2 --- [      main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2018-04-05 21:34:48.237  INFO instance-2 --- [      main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2018-04-05 21:34:48.240 ERROR instance-2 --- [      main] o.s.b.SpringApplication                  : Application startup failed
+org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat servlet container
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:165)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:293)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1191)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1180)
+	at com.batria.MainClass.main(MainClass.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:54)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Tomcat connector in failed state
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:159)
+	... 16 more
+2018-04-05 21:34:48.248  INFO instance-2 --- [      main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-boot-starter-web-1.3.5.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-boot-starter-1.3.5.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-boot-1.3.5.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-boot-autoconfigure-1.3.5.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-core-4.2.6.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/snakeyaml-1.16.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-boot-starter-tomcat-1.3.5.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/tomcat-embed-core-8.0.33.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/tomcat-embed-el-8.0.33.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/tomcat-embed-logging-juli-8.0.33.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/tomcat-embed-websocket-8.0.33.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-boot-starter-validation-1.3.5.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/hibernate-validator-5.2.4.Final.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/validation-api-1.1.0.Final.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/jboss-logging-3.3.0.Final.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/classmate-1.1.0.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-web-4.2.6.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-aop-4.2.6.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/aopalliance-1.0.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-beans-4.2.6.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-context-4.2.6.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-webmvc-4.2.6.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-expression-4.2.6.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/spring-boot-starter-log4j2-1.3.5.RELEASE.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/log4j-slf4j-impl-2.4.1.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/slf4j-api-1.7.21.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/log4j-api-2.4.1.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/log4j-core-2.4.1.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/jcl-over-slf4j-1.7.21.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/jul-to-slf4j-1.7.21.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/jackson-mapper-asl-1.9.10.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/jackson-core-asl-1.9.10.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/gson-2.7.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/json-20160810.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/hazelcast-client-3.9.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/hazelcast-3.9.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/jackson-databind-2.9.3.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/jackson-annotations-2.9.3.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/jackson-dataformat-csv-2.9.3.jar!/, jar:file:/root/PCF-HelloWorld/pcf-helloworld-demo-1.0.0.jar!/lib/jackson-core-2.9.3.jar!/]

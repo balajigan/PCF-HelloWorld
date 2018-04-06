@@ -118,6 +118,6 @@ public class RestAPIController {
     @RequestMapping( method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE, value = "/")
 	    public String homePage()
 	    {
-		return("Message from service....");
+		return("New Message from service....");
 	    }
 }
