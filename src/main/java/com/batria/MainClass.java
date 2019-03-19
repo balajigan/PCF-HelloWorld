@@ -29,7 +29,7 @@ public class MainClass
 	// Configure the IP and port, before starting this.
         String serverIp = "10.128.0.4:5701";
 
-	// Create the client, before start accepting the requests.
+	// Create the client, before start accepting the requests..
 //        Connection conn = new Connection(serverIp);
 //	HazelcastInstance client = conn.getClient();
 
