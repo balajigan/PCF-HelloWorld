@@ -30,8 +30,8 @@ public class MainClass
         String serverIp = "10.128.0.4:5701";
 
 	// Create the client, before start accepting the requests.
-        Connection conn = new Connection(serverIp);
-	HazelcastInstance client = conn.getClient();
+//        Connection conn = new Connection(serverIp);
+//	HazelcastInstance client = conn.getClient();
 
         ApplicationContext ctx = SpringApplication.run(MainClass.class, args);
 
