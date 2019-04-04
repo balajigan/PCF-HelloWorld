@@ -1,0 +1,16 @@
+
+apiVersion: v1
+kind: Pod
+metadata:
+    name: api-demo
+    labels: 
+      app: demo-app
+      tier: dev
+spec:
+    containers:
+    - name: app-container
+      image: balajigan/pcf-demo
+
+# kubectl create -f demo-pod.yaml
+# kubectl get pod -o wide
+# #
