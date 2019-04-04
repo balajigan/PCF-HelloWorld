@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: api-demo-service
+spec:
+  selector:
+    app: api-demo
+  type: LoadBalancer
+     
+  ports:
+    - nodePort: 31000
+      targetPort: 80
+      port: 80
+
+# kubectl create -f service.yaml
+# kubectl get service api-demo-service
