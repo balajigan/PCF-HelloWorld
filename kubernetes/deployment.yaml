@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: app-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: api-demo
+    spec:
+      containers:
+      - name: app-container
+        image: balajigan/pcf-demo
+        ports:
+        - containerPort: 80
+
+ # kubectl create -f deployment.yaml
+ # kubectl get deploy app-deployment
+ # kubectl describe deploy app-deployment
+
